@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'fountain-app',
-  template: require('./hello.html')
+  selector: 'bitmate-app',
+  template: require('./main.html')
 })
-export class HelloComponent {
+export class MainComponent {
   constructor() {
     this.hello = 'Hello World!';
   }

@@ -1,0 +1,32 @@
+//
+// App-wide Styles
+//
+
+.browserupgrade
+  background #ccc
+  color #000
+  margin 0.2em 0
+  padding 0.2em 0
+<% if(styling !== 'bootstrap') { %>
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px)
+  .container
+    max-width: 730px;
+    margin: 0 auto;
+
+body
+  font-family: Sans-Serif;
+  margin: 0;
+
+#banner.h1
+  margin-bottom: 10px;
+
+
+p.lead
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4;
+<% } %>
+/* inject:styl */
+@import "app/main"
+/* endinject */
