@@ -1,6 +1,6 @@
 {
   "name": "@oligibson/generator-bitmate-angular2",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "BitMate generator for building an Angular 2 web client",
   "homepage": "https://bitmate.io/",
   "main": "index.js",
@@ -19,7 +19,7 @@
   "author": "BitMate",
   "license": "UNLICENSED",
   "dependencies": {
-    "@oligibson/bitmate-generator": "^1.0.0"
+    "@oligibson/bitmate-generator": "^1.0.4"
   },
   "devDependencies": {
     "ava": "^0.16.0",
