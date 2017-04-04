@@ -1,7 +1,8 @@
 {
-  "name": "generator-bitmate-angular2",
+  "name": "@oligibson/generator-bitmate-angular2",
   "version": "1.0.0",
   "description": "BitMate generator for building an Angular 2 web client",
+  "homepage": "https://bitmate.io/",
   "main": "index.js",
   "scripts": {
     "test": "gulp test",
@@ -18,7 +19,7 @@
   "author": "BitMate",
   "license": "UNLICENSED",
   "dependencies": {
-    "bitmate-generator": "^1.0.0"
+    "@oligibson/bitmate-generator": "../bitmate-generator"
   },
   "devDependencies": {
     "ava": "^0.16.0",
@@ -50,8 +51,5 @@
   },
   "eslintConfig": {
     "extends": "xo-space/esnext"
-  },
-  "publishConfig": {
-    "registry": "http://sinopia.bitmate.io/"
   }
 }
