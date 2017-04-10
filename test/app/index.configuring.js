@@ -18,13 +18,13 @@ test.beforeEach(() => {
 test(`Add '@angular/core' to package.json dependencies`, t => {
   context.props = {js: 'babel'};
   TestUtils.call(context, 'configuring.pkg');
-  t.is(context.mergeJson['package.json'].dependencies['@angular/core'], '^2.4.8');
+  t.is(context.mergeJson['package.json'].dependencies['@angular/core'], '2.4.10');
 });
 
 test(`Add 'babel-plugin-angular2-annotations' to package.json devDependencies with js of 'babel'`, t => {
   context.props = {js: 'babel'};
   TestUtils.call(context, 'configuring.babel');
-  t.is(context.mergeJson['package.json'].devDependencies['babel-plugin-angular2-annotations'], '^5.1.0');
+  t.is(context.mergeJson['package.json'].devDependencies['babel-plugin-angular2-annotations'], '5.1.0');
 });
 
 test(`Add 'angular2-annotations' to .babelrc plugins when js is 'babel' and modules is 'webpack'`, t => {
@@ -55,7 +55,7 @@ test(`Don't add 'bootstrap' to package.json devDependencies with 'styling' is 'n
 test(`Add '@angular/router' to package.json dependencies`, t => {
   context.props = {router: 'ngroute'};
   TestUtils.call(context, 'configuring.router');
-  t.is(context.mergeJson['package.json'].dependencies['@angular/router'], '^3.4.8');
+  t.is(context.mergeJson['package.json'].dependencies['@angular/router'], '3.4.10');
 });
 
 test(`Add 'ui-router-ng2' to package.json dependencies`, t => {

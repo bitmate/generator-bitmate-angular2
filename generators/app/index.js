@@ -44,18 +44,18 @@ module.exports = bitmate.Base.extend({
   configuring: {
     pkg() {
       const pkg = Object.assign({}, {
-        name: "app",
-        version: "0.0.0",
+        name: 'app',
+        version: '0.0.0',
         dependencies: {
-          '@angular/core': '^2.4.8',
-          '@angular/compiler': '^2.4.8',
-          '@angular/common': '^2.4.8',
-          '@angular/platform-browser': '^2.4.8',
-          '@angular/platform-browser-dynamic': '^2.4.8',
-          '@angular/http': '^2.4.8',
-          'rxjs': '5.1.1',
-          'zone.js': '^0.7.7',
-          'core-js': '^2.4.1'
+          '@angular/core': '2.4.10',
+          '@angular/compiler': '2.4.10',
+          '@angular/common': '2.4.10',
+          '@angular/platform-browser': '2.4.10',
+          '@angular/platform-browser-dynamic': '2.4.10',
+          '@angular/http': '2.4.10',
+          rxjs: '5.1.1',
+          'zone.js': '0.7.8',
+          'core-js': '2.4.1'
         }
       });
 
@@ -66,10 +66,10 @@ module.exports = bitmate.Base.extend({
       if (this.props.js === 'babel') {
         this.mergeJson('package.json', {
           devDependencies: {
-            'babel-plugin-angular2-annotations': '^5.1.0',
-            'babel-plugin-transform-class-properties': '^6.23.0',
-            'babel-plugin-transform-decorators-legacy': '^1.3.4',
-            'babel-plugin-transform-flow-strip-types': '^6.22.0'
+            'babel-plugin-angular2-annotations': '5.1.0',
+            'babel-plugin-transform-class-properties': '6.24.1',
+            'babel-plugin-transform-decorators-legacy': '1.3.4',
+            'babel-plugin-transform-flow-strip-types': '6.22.0'
           }
         });
 
@@ -99,8 +99,8 @@ module.exports = bitmate.Base.extend({
       if (this.props.styling === 'bootstrap') {
         this.mergeJson('package.json', {
           dependencies: {
-            tether: '^1.4.0',
-            jquery: '^3.1.1',
+            tether: '1.4.0',
+            jquery: '3.2.1',
             bootstrap: '4.0.0-alpha.6'
           }
         });
@@ -111,7 +111,7 @@ module.exports = bitmate.Base.extend({
       if (this.props.router === 'ngroute') {
         this.mergeJson('package.json', {
           dependencies: {
-            '@angular/router': '^3.4.8'
+            '@angular/router': '3.4.10'
           }
         });
       }
